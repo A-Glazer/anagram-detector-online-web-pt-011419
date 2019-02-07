@@ -11,7 +11,7 @@ attr_accessor :word
     #binding.pry
     array.select do |x|
       x.split("").sort == @word.split.sort
-      
+
 
     end
 
