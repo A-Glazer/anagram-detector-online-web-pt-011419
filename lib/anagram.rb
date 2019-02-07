@@ -8,9 +8,10 @@ attr_accessor :word
   end
 
   def match(array)
-    binding.pry
-    array.match do |x|
-      x.sort == @word.sort
+    #binding.pry
+    array.select do |x|
+      x.split("").sort == @word.split.sort
+      
 
     end
 
