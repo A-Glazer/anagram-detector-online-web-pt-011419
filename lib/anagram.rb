@@ -7,10 +7,11 @@ attr_accessor :word
     @word = word
   end
 
-  def match
-    @word.match do |x|
+  def match(array)
+    binding.pry
+    array.match do |x|
       x.sort == @word.sort
-binding.pry
+
     end
 
 
